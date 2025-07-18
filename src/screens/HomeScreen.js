@@ -99,6 +99,20 @@ const HomeScreen = (props) => {
       >
         <Text>Go to Password Screen </Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => props.navigation.navigate("Box")}
+        style={{
+          backgroundColor: "#d896ff",
+
+          paddingVertical: 8,
+          paddingHorizontal: 16,
+          borderRadius: 20,
+          alignSelf: "center", // يخلي الزر بحجمه الصغي
+          marginTop: 10,
+        }}
+      >
+        <Text>Go to Box Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };
